@@ -21,6 +21,7 @@ Chen F.
 Part 1 - Global varibles or test data input
 
 Part 2 - Program Main-body functions
+         Output usually here inside functions using console.log
 
 Part 3 - Function calls(with some test data input)
 
