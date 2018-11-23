@@ -33,6 +33,7 @@ function productOfIndexes() {
 
 function getAllFactors(number) {
 
+
     for (let i = 1; i <= number; i++) {
         if (number % i == 0) console.log(i + ' ');
     }
@@ -41,8 +42,9 @@ function getAllFactors(number) {
 function checkPrime(number) {
 
     let flag = true;
+    let upper = Math.floor(Math.sqrt(number)) + 1;
 
-    for (let i = 2; i < number; i++) {
+    for (let i = 2; i < upper; i++) {
         if (number % i == 0) flag = false;
     }
 
@@ -53,5 +55,5 @@ function checkPrime(number) {
 addIndexes();
 combinationOfIndexes();
 productOfIndexes();
-getAllFactors(6);
-checkPrime(6);
+getAllFactors(21371);
+checkPrime(21371);
