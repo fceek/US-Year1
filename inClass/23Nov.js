@@ -31,7 +31,7 @@ function productOfIndexes() {
     console.log(result);
 }
 
-function getAllFactors(number) {
+function getAllFactors(number) {  // This function is to get the input's every factor(including 1 and itself)
 
 
     for (let i = 1; i <= number; i++) {
@@ -39,10 +39,10 @@ function getAllFactors(number) {
     }
 }
 
-function checkPrime(number) {
+function checkPrime(number) {  // This function is to check if the input is a prime number
 
     let flag = true;
-    let upper = Math.floor(Math.sqrt(number)) + 1;
+    let upper = Math.floor(Math.sqrt(number)) + 1; //Upper boundary set to square root of input, because factors are always appeared in pairs both sides of square root of input, we don't need to check both sides
 
     for (let i = 2; i < upper; i++) {
         if (number % i == 0) flag = false;
