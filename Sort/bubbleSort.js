@@ -19,7 +19,9 @@ function bubbleSortAlter(list){     // This function is Micro bit(Pat's way) bub
     while (outp >= 0) {
         for (let i = 0; i <= outp - 1; i++) {
             if (list[i] > list[i+1]) {
-                list[i] = list[i] + list[i+1]; list[i+1] = list[i] - list[i+1]; list[i] = list[i] - list[i+1];
+                let temp = list[i+1];
+                list[i+1] = list[i];
+                list[i] = temp;
             }
         }
 
