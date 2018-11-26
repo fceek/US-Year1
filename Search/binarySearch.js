@@ -1,5 +1,5 @@
 const target = 13;
-const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13];
+var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13];
 
 function binarySearch(list) {    // This function is the normal way(Pat's way) of binary search
     let lb = 0;

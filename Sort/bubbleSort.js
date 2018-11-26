@@ -1,4 +1,4 @@
-const list = [998,1,32,4,14,34783,13,41,3,123,7,999];
+var list = [998,1,32,4,14,34783,13,41,3,123,7,999];
 
 function bubbleSort(list) {     // This function is another way of bubble sort, using for loop inside another for loop
 
@@ -33,6 +33,9 @@ function bubbleSortAlter(list){     // This function is Micro bit(Pat's way) bub
 
 
 bubbleSort(list);
+
+list = [998,1,32,4,14,34783,13,41,3,123,7,999]; // Reset the list to show another function is working correctly
+
 bubbleSortAlter(list);
 
 /* Appendix: 3 different ways of swapping 2 variables

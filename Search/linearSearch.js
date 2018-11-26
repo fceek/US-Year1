@@ -1,4 +1,4 @@
-const list = [4,32,23,3,213,56,7,576,6,247,24,7,154,2,7,27];
+var list = [4,32,23,3,213,56,7,576,6,247,24,7,154,2,7,27];
 
 function linearSearchForMax(list) {  // This function is to search for maximum number in an un-ordered list
     let maxPosition = 0;
