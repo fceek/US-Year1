@@ -27,7 +27,7 @@ function insertSortAlter() {
         for (let j = 0; j < i; j++) {
             if (list[j] > list[i]) {
                 let temp = list[i];
-                for (let k = i; k > j; k--) list[k] = list[k-1]
+                for (let k = i; k > j; k--) list[k] = list[k-1];
                 list[j] = temp;
             }
         }

@@ -13,7 +13,7 @@ function twoMaxSum(list) {   // calculate the sum of the biggest number and the 
         if (list[i] > secondMax && list[i] < max) secondMax = list[i];
         if (list[i] >= max) {
             secondMax = max;
-            max = list[i]
+            max = list[i];
         }
     }
 
@@ -58,7 +58,7 @@ function ticTacToe(board) {
 
     let currentSet = [];
 
-    if (stepCount % 2 == 0) {   // determine which side is going to move in the next step
+    if (stepCount % 2 === 0) {   // determine which side is going to move in the next step
         nextMove = 'cross';
         player = 'x';
     }

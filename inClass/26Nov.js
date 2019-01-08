@@ -8,7 +8,7 @@ function checkPrime(number) {  // This function is to check if the input is a pr
     }
 
     if (flag) console.log('is prime');
-    else console.log('not prime')
+    else console.log('not prime');
 }
 
 function goesToOne(number) {
