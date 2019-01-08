@@ -1,4 +1,7 @@
 # Algorithms..
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/41a53f28fdf2446cb99cc79efab29ed3)](https://app.codacy.com/app/fceek/Algorithm?utm_source=github.com&utm_medium=referral&utm_content=fceek/Algorithm&utm_campaign=Badge_Grade_Dashboard)
+
 Created For University of Sussex ISCO 2018
 
 Chen F.
