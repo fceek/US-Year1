@@ -16,7 +16,7 @@ Chen F.
 ## 2. Code habit
 
 **Structure** :
-```
+
 Part 1 - Global variables or test data input
 
 Part 2 - Program Main-body functions
@@ -25,7 +25,7 @@ Part 2 - Program Main-body functions
 Part 3 - Function calls(with some test data input)
 
 //Comments and explanations will be added if I have enough boring time
-```
+
 **specific structure may various due to specific situation*
 
 **Language** - Javascript, will add other languages the course would also include them;
@@ -33,9 +33,9 @@ Part 3 - Function calls(with some test data input)
 ## 3. Ask a question
 
 ### If it's serious
- 1. Click the tab 'Issues';
- 2. Check questions or create a 'New Issue';
- 3. Describe certain file and line number or question in detail.
+1. Click the tab 'Issues';
+2. Check questions or create a 'New Issue';
+3. Describe certain file and line number or question in detail.
 
 ### If it's not serious
- * Just comment or message XD
+*  Just comment or message XD
