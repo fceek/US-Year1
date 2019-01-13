@@ -33,9 +33,9 @@ Part 3 - Function calls(with some test data input)
 ## 3. Ask a question
 
 ### If it's serious
-1. Click the tab 'Issues';
-2. Check questions or create a 'New Issue';
-3. Describe certain file and line number or question in detail.
+1.  Click the tab 'Issues';
+2.  Check questions or create a 'New Issue';
+3.  Describe certain file and line number or question in detail.
 
 ### If it's not serious
-*  Just comment or message XD
+*   Just comment or message XD
