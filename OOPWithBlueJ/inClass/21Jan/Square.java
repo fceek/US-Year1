@@ -32,6 +32,7 @@ public class Square
         size =10;
         xPosition = xStart;
         yPosition = yStart;
+        color = "red";
         isVisible = true;
         draw();
     }
@@ -203,21 +204,30 @@ public class Square
     public void goRoundTheCanvas()
     
     {
-
-
+        
         Square square1 = new Square();
+        square1.changeColor("red");
         square1.changeSize(10);
-        square1.makeVisible();
         square1.moveHorizontal(-60);
         square1.moveVertical(-50);
-        square1.slowMoveHorizontal(400);
-        square1.slowMoveVertical(200);
-
+        square1.makeVisible();
+        square1.slowMoveHorizontal(590);
+        square1.slowMoveVertical(290);
+        square1.slowMoveHorizontal(-590);
+        square1.slowMoveVertical(-290);
         
     }
     
     public void task2()
     {
+        
+        Square square1 = new Square(0,0);
+        square1.changeSize(10);
+        square1.makeVisible();
+        square1.slowMoveHorizontal(590);
+        square1.slowMoveVertical(290);
+        square1.slowMoveHorizontal(-590);
+        square1.slowMoveVertical(-290);
         
     }
 }
