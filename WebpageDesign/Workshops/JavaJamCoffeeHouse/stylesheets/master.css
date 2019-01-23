@@ -1,0 +1,45 @@
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  width: 80px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #888;
+}
+
+nav ul li a.current {
+  color: #4284F4;
+}
+
+.container .relax h2 {
+  margin: 40px auto auto 80px;
+}
+
+.container .relax ul li{
+  margin: auto auto 10px 20px;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+footer div {
+  display: inline-block;
+  float: left;
+}
+
+footer div.copyright {
+  text-align: right;
+  margin: 20px auto auto 50px;
+}
