@@ -1,0 +1,16 @@
+
+.container .relax h2 {
+  padding: 20px 0 0 80px;
+}
+
+.container .relax ul li {
+  padding: 0 0 10px 20px;
+}
+
+span.text-coffee {
+  color: #b96900;
+}
+
+span.text-tea {
+  color: #534821;
+}

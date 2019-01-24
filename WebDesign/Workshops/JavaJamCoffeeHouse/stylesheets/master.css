@@ -1,3 +1,12 @@
+body {
+  width: 370px;
+  height: 600px;
+}
+
+header {
+  text-align: center;
+}
+
 ul {
   list-style: none;
 }
@@ -6,6 +15,12 @@ nav ul li {
   display: inline-block;
   float: left;
   width: 80px;
+  border-right: solid 1px #000;
+  text-align: center;
+}
+
+nav ul li.nav-last {
+  border-style: none;
 }
 
 nav ul li a {
@@ -18,20 +33,14 @@ nav ul li a:hover {
 }
 
 nav ul li a.current {
-  color: #4284F4;
-}
-
-.container .relax h2 {
-  margin: 40px auto auto 80px;
-}
-
-.container .relax ul li{
-  margin: auto auto 10px 20px;
+  color: #4284f4;
 }
 
 footer {
-  margin-top: 50px;
+  padding-top: 10px;
   font-size: 14px;
+  height: 64px;
+  background-color: #dbf1ff;
 }
 
 footer div {
@@ -39,7 +48,11 @@ footer div {
   float: left;
 }
 
+footer div.contact {
+  padding-left: 12px;
+}
+
 footer div.copyright {
   text-align: right;
-  margin: 20px auto auto 50px;
+  padding: 20px 0 0 50px;
 }
