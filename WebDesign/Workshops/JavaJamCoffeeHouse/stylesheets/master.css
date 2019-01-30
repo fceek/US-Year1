@@ -1,18 +1,36 @@
-body {
-  width: 370px;
-  height: 600px;
-}
-
-header {
-  text-align: center;
-}
+/*===== init =====*/
 
 ul {
   list-style: none;
 }
 
+.pageWrapper {
+  padding-left: 50%;
+  margin-left: -185px;
+  width: 370px;
+  height: 600px;
+}
+
+/*===== header =====*/
+
+header img {
+  padding-left: 60px;
+  width: 64px;
+  height: 64px;
+  float: left;
+}
+
+header div.headerWarp {
+  padding-left: 140px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/*===== navigation bar =====*/
+
 nav ul li {
-  display: inline-block;
   float: left;
   width: 80px;
   border-right: solid 1px #000;
@@ -36,15 +54,15 @@ nav ul li a.current {
   color: #4284f4;
 }
 
+/*==== footer =====*/
+
 footer {
   padding-top: 10px;
   font-size: 14px;
   height: 64px;
-  background-color: #dbf1ff;
 }
 
 footer div {
-  display: inline-block;
   float: left;
 }
 
