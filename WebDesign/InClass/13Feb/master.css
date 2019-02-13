@@ -1,0 +1,18 @@
+.title {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.part1 {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 45%;
+  float: left;
+}
+
+.part2 {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 45%;
+  float: left;
+}
