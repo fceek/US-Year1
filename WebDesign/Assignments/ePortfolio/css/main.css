@@ -12,7 +12,7 @@ a, a:visited {
 }
 
 body {
-  background-color: #eee;
+  background-color: #222;
 }
 
 /*===================== general ====================*/
@@ -77,12 +77,15 @@ nav ul li.dual {
 
   /*===  nav spec ===*/
 
-
   nav ul li.active {
     background-color: #006fc5;
   }
 
-  nav ul li.single:hover, li span:hover{
+  nav ul li span.active {
+    text-decoration: underline;
+  }
+
+  nav ul li.single:hover, nav ul li span:hover{
     background-color: #fff;
     color: #009fff;
   }
@@ -103,12 +106,42 @@ footer h3 {
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 10px;
 }
 
-/*======================= Pages *=====================*/
+/*======================= Pages =====================*/
+
+/*========= intro =========*/
 
 main {
-  height: 300px;
+  padding: 60px 120px;
+}
+
+.brief h3 {
+  color: #009fff;
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+
+.brief p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: verdana;
+}
+
+.cv-title-line {
+  width: 60%;
+  height: 2px;
+  background-color: #009fff;
+}
+
+.cv-title {
+  padding: 90px 0 70px 0;
+}
+
+.cv-title h3 {
+  padding-top: 50px;
+  color: #009fff;
+  font-size: 36px;
 }
