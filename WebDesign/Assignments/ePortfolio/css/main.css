@@ -20,7 +20,7 @@ body {
 .container {
   width: 1080px;
   margin: auto;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 /*==== header ====*/
@@ -115,13 +115,13 @@ footer p {
 /*========= intro =========*/
 
 main {
-  padding: 60px 120px;
+  padding: 100px 120px 60px 120px;
 }
 
 .brief h3 {
   color: #009fff;
   font-size: 32px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 
 .brief p {
@@ -137,7 +137,7 @@ main {
 }
 
 .cv-title {
-  padding: 90px 0 70px 0;
+  padding: 90px 0 20px 0;
 }
 
 .cv-title h3 {
@@ -145,3 +145,70 @@ main {
   color: #009fff;
   font-size: 36px;
 }
+
+.wrapper {
+  background-color: #fff;
+  padding: 40px 60px;
+}
+
+.break {
+  width: 480px;
+  height: 1px;
+  background-color: #000;
+  margin-left: 50px;
+}
+
+.cv {
+  padding: 30px 50px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.cv h3 {
+  font-size: 22px;
+  padding-bottom: 16px;
+}
+
+.info h3 {
+  padding-bottom: 3px;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.info p.info-indent {
+  padding-left: 29px;
+}
+
+.avatar {
+  float: right;
+  padding: 0 30px;
+}
+
+.avatar img {
+  height: 150px;
+  width: auto;
+}
+
+.skills ul li {
+  display: inline-block;
+  padding: 0 20px;
+  width: 240px;
+}
+
+.exps dl dd {
+  font-weight: bold;
+  padding-left: 16px;
+}
+
+.exps dl dt {
+  padding-left: 36px;
+}
+
+.quals ul{
+  padding-left: 40px;
+}
+
+/*====== units a&b =======*/
