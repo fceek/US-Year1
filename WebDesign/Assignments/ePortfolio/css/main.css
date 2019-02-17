@@ -169,6 +169,10 @@ main {
   padding-bottom: 16px;
 }
 
+.cv li, .cv dt {
+  font-size: 15px;
+}
+
 .info h3 {
   padding-bottom: 3px;
 }
@@ -207,8 +211,107 @@ main {
   padding-left: 36px;
 }
 
-.quals ul{
+.quals ul {
   padding-left: 40px;
 }
 
 /*====== units a&b =======*/
+
+.units {
+  padding-bottom: 40px;
+}
+
+.units p {
+  line-height: 22px;
+}
+
+.un-wrapper {
+  background-color: #fff;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.un-title h2 {
+  color: #009fff;
+  font-size: 47px;
+}
+
+.un-title p {
+  color: #009fff;
+  font-size: 14px;
+  font-stretch:extra-condensed;
+}
+
+.un-title a {
+  display: block;
+  padding: 16px 0 24px 20px;
+  color: #999;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.un-discription p {
+  color: #777;
+  font-size: 15px;
+}
+
+.un-image {
+  float: right;
+}
+
+.un-line {
+  width: 360px;
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+.reflection p, .experience p {
+  font-size: 14px;
+}
+
+.units p span {
+  font-size: 28px;
+  color: #009fff;
+}
+
+/*===========  Evaluation ============*/
+
+.def h4 {
+  color: #009fff;
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 30px;
+}
+
+.bar {
+  height: 18px;
+  background-color: #1276B2;
+  margin: 24px 0 18px 0;
+}
+
+.bar-1 {
+  width: 600px;
+}
+
+.bar-2 {
+  width: 380px;
+}
+
+.bar-3 {
+  width: 240px;
+}
+
+.bar-4 {
+  width: 450px;
+}
+
+.bar-5 {
+  width: 600px;
+}
+
+.com p {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #666;
+}
