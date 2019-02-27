@@ -1,0 +1,15 @@
+table.ta td {
+  border: 2px solid #fff;
+  background-color: #00ee90;
+  padding: 8px;
+  text-align: center;
+}
+
+table.ta th {
+  background-color: #00f5b3;
+  border: 2px solid #fff;
+}
+
+table {
+  padding-bottom: 200px;
+}

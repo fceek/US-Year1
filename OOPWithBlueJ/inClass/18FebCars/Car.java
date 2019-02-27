@@ -58,4 +58,12 @@ public class Car
     public void setReg(String _carReg) {
         if (_carReg.length() == 4 && _carReg.substring(0,2).equals("A5")) carReg = _carReg;
     }
+    
+    public String getReg() {
+        return carReg;
+    }
+    
+    public String toString() {
+        return make + " " + model + " " + carReg;
+    }
 }
