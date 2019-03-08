@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      label {
+        font-family: Arial, sans-serif;
+        display: block;
+        padding-bottom: 20px;
+      }
+
+      fieldset {
+        width: 320px;
+        border: 2px ridge #f00;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      fieldset.uniq {
+        border: 2px solid #00f;
+      }
+
+      legend {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: bold;
+      }
+
+      input.button {
+        width: 70px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <form action="http://webdevbasics.net/scripts/demo.php" method="get">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label>First Name: <input type="text" name="myName"></label>
+        <label>Last Name : <input type="text" name="myEmail"></label>
+        <label>Tel Number: <input type="text" name="myComments"></label>
+        <label>Email Addr: <input type="text"></label>
+      </fieldset>
+
+      <fieldset class="uniq">
+        <legend>Your Degree</legend>
+        <p>Degree</p>
+        <select size="1">
+          <option>HND</option>
+          <option>BSc</option>
+          <option>MSc</option>
+          <option>Phd</option>
+        </select>
+        <p>Year of Grad</p>
+        <select size="1">
+          <option>2012</option>
+          <option>2013</option>
+        </select>
+
+        <p>Sussex Student?</p>
+        <input type="radio" name="wawa">Yes
+        <br>
+        <input type="radio" name="wawa">No
+      </fieldset>
+
+      <input class="button" type="submit">
+      <input class="button" type="reset">
+    </form>
+
+  </body>
+</html>
