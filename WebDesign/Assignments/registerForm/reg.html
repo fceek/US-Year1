@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      form {
+        border: 2px solid #000;
+        padding: 30px;
+        width: 600px;
+      }
+
+      p.subtitle {
+        padding-bottom: 20px;
+      }
+
+      label {
+        font-family: Arial, sans-serif;
+        display: block;
+        padding-bottom: 20px;
+      }
+
+      input.button {
+        width: 70px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <form method="POST" action="https://fp1.formmail.com/cgi-bin/fm192">
+
+      <input type="hidden" name="_pid" value="154854">
+      <input type="hidden" name="_fid" value="741LI5QF">
+      <input type="hidden" name="recipient" value="1">
+
+      <h1>User Registration</h1>
+      <p class="subtitle">please complete the following form to register with our site:</p>
+
+      <table>
+        <tr>
+          <td>UserName:</td>
+          <td><input class="group1" type="text" name="myName"></td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td><input class="group1" type="password" name="myPass"></td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gend" value="male">Male
+            <br>
+            <input type="radio" name="gend" value="female">Female
+          </td>
+        </tr>
+
+        <tr>
+          <td>How did you hear about us?</td>
+          <td>
+            <select name="Method" size="1">
+              <option>Select answer</option>
+              <option>Magazine</option>
+              <option>TV Ad</option>
+              <option>Hear from friend</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Please check this box if you want me send you surprise emails in midnight.</td>
+          <td>
+            <input class="group2" type="checkbox" name="subscribe">
+          </td>
+        </tr>
+      </table>
+
+      <input class="button" type="submit">
+      <input class="button" type="reset">
+    </form>
+
+  </body>
+</html>

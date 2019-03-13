@@ -34,26 +34,29 @@
   </head>
   <body>
 
-    <form action="http://webdevbasics.net/scripts/demo.php" method="get">
+    <form method="POST" action="https://fp1.formmail.com/cgi-bin/fm192">
+      <input type="hidden" name="_pid" value="154854">
+      <input type="hidden" name="_fid" value="741LI5QF">
+      <input type="hidden" name="recipient" value="1">
       <fieldset>
         <legend>Personal Info</legend>
         <label>First Name: <input type="text" name="myName"></label>
-        <label>Last Name : <input type="text" name="myEmail"></label>
-        <label>Tel Number: <input type="text" name="myComments"></label>
-        <label>Email Addr: <input type="text"></label>
+        <label>Last Name : <input type="text" name="myLName"></label>
+        <label>Tel Number: <input type="text" name="myTel"></label>
+        <label>Email Addr: <input type="text" name="myEmail"></label>
       </fieldset>
 
       <fieldset class="uniq">
         <legend>Your Degree</legend>
         <p>Degree</p>
-        <select size="1">
+        <select  name="degree" size="1">
           <option>HND</option>
           <option>BSc</option>
           <option>MSc</option>
           <option>Phd</option>
         </select>
         <p>Year of Grad</p>
-        <select size="1">
+        <select name="years" size="1">
           <option>2012</option>
           <option>2013</option>
         </select>
