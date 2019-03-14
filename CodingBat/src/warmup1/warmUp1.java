@@ -1,6 +1,6 @@
-package WarmUp1;
+package warmup1;
 
-public class WarmUp1 {
+public class warmUp1 {
 
     public static void main(String[] args) {
         Code runner = new Code() ;
@@ -173,13 +173,11 @@ class Code {
             if (str.charAt(i) == 'e') eCount++;
         }
 
-        if (eCount <= 3 && eCount >= 1) return true;
-            else return false;
+        return (eCount <= 3 && eCount >= 1);
     }
 
     public boolean lastDigit(int a, int b) {
-        if (a % 10 == b % 10) return true;
-        return false;
+        return (a % 10 == b % 10);
     }
 
     public String endUp(String str) {
