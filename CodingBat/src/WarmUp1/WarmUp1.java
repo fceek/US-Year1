@@ -6,15 +6,13 @@ public class WarmUp1 {
         Code runner = new Code() ;
 
         System.out.println(
-                runner.startOz("zoxx")
+                "Test finished"
         );
     }
 
 }
 
 class Code {
-
-    public Code(){};
 
     public boolean sleepIn(boolean weekday, boolean vacation) {
         return (!weekday) || vacation;
@@ -132,6 +130,70 @@ class Code {
         }
         else if (str.equals("o")) return "o";
             else return "";
+    }
+
+    public int intMax(int a, int b, int c) {
+        if (b > c) {
+            if (a > b) return a;
+                else return b;
+        }
+        else {
+            if (a>c) return a;
+                else return c;
+        }
+    }
+
+    public int close10(int a, int b) {
+        int ato10 = Math.abs(a - 10);
+        int bto10 = Math.abs(b - 10);
+        if (ato10 > bto10) return b;
+            else if (ato10 == bto10) return 0;
+                else return a;
+    }
+
+    public boolean in3050(int a, int b) {
+        return ((a >= 30 && a <= 40) && (b >= 30 && b <=40)) || ((a >= 40 && a <= 50) && (b >= 40 && b <= 50));
+    }
+
+    public int max1020(int a, int b) {
+        if ((a > 20 || a < 10) && (b > 20 || b < 10)) return 0;
+        if (a > b) {
+            if (a > 20) return b;
+                else return a;
+        }
+        else {
+            if (b > 20) return a;
+                else return b;
+        }
+    }
+
+    public boolean stringE(String str) {
+        int eCount = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'e') eCount++;
+        }
+
+        if (eCount <= 3 && eCount >= 1) return true;
+            else return false;
+    }
+
+    public boolean lastDigit(int a, int b) {
+        if (a % 10 == b % 10) return true;
+        return false;
+    }
+
+    public String endUp(String str) {
+        if (str.length() < 3) return str.toUpperCase();
+            else return str.substring(0,str.length()-3) + str.substring(str.length()-3).toUpperCase();
+    }
+
+    public String everyNth(String str, int n) {
+        String modStr = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (i % n == 0) modStr += str.charAt(i);
+        }
+
+        return modStr;
     }
 
 }
