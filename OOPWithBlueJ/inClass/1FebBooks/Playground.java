@@ -1,10 +1,5 @@
 public class Playground
 {
-
-    public Playground() {
-        
-    }
-
     public void helloName(String name) {
         System.out.println("Hello " + name + "!");
     }
@@ -27,7 +22,6 @@ public class Playground
     }
     
     public boolean endCheck(String candidate) {
-        if (candidate.substring(candidate.length()-2).equals("ly")) return true;
-            else return false;
+        return (candidate.substring(candidate.length()-2).equals("ly"));
     }
 }

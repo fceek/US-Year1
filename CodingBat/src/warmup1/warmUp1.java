@@ -1,6 +1,6 @@
 package warmup1;
 
-public class warmUp1 {
+public class WarmUp1 {
 
     public static void main(String[] args) {
         Code runner = new Code() ;
@@ -123,12 +123,12 @@ class Code {
     public String startOz(String str) {
         if (str.length() >= 2) {
             String expStr = str.substring(0, 2);
-            if (expStr.equals("oz")) return "oz";
+            if ("oz".equals(expStr)) return "oz";
             else if (str.charAt(0) == 'o') return "o";
             else if (str.charAt(1) == 'z') return "z";
             else return "";
         }
-        else if (str.equals("o")) return "o";
+        else if ("o".equals(str)) return "o";
             else return "";
     }
 

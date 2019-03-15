@@ -7,13 +7,10 @@
  */
 public class TestBook
 {
-   private Book bk;
-   private Book bk2;
-   
    public TestBook()
    {
-       bk = new Book();
-       bk2 = new Book("Lester","CMU",5000);
+       Book bk = new Book();
+       Book bk2 = new Book("Lester","CMU",5000);
        
        bk.getAuthor();
        bk.getTitle();

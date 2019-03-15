@@ -7,12 +7,10 @@
  */
 public class Test
 {
-    private TicketMachine ticketma;
-    
-    
     public Test()
     {
-        ticketma = new TicketMachine(158);
+        
+        TicketMachine ticketma = new TicketMachine(158);
         ticketma.insertMoney(999);
         ticketma.printTicket();
         ticketma.refundBalance();

@@ -98,7 +98,7 @@ class Book
         System.out.println("Author: " + author);
         System.out.println("Title: " + title);
         System.out.println("TotalPages: " + pages);
-        if (refNumber != "") System.out.println("Ref: " + refNumber);
+        if (!"".equals(refNumber)) System.out.println("Ref: " + refNumber);
             else System.out.println("Ref: xxx");
         System.out.println("Borrowed: " + borrowed);
     }

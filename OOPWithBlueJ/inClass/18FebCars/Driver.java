@@ -15,28 +15,32 @@ public class Driver
         defCar = new Car();
     }
     
-    public String getModel(Car thecar) {
-        return thecar.getModel();
+    public String getDriverName() {
+        return name;
     }
     
-    public String getMake(Car thecar) {
-        return thecar.getMake();
+    public String getModel() {
+        return defCar.getModel();
     }
     
-    public String getReg(Car thecar) {
-        return thecar.getReg();
+    public String getMake() {
+        return defCar.getMake();
     }
     
-    public void changeGear(int _gear, Car thecar) {
-        thecar.changeGear(_gear);
+    public String getReg() {
+        return defCar.getReg();
     }
     
-    public void regCar(String _reg, Car thecar) {
-        thecar.setReg(_reg);
-        System.out.println(thecar);
+    public void changeGear(int _gear) {
+        defCar.changeGear(_gear);
     }
     
-    public String soundHorn(Car thecar) {
-        return thecar.soundHorn();
+    public void regCar(String _reg) {
+        defCar.setReg(_reg);
+        System.out.println(defCar);
+    }
+    
+    public String soundHorn() {
+        return defCar.soundHorn();
     }
 }

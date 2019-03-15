@@ -21,6 +21,7 @@ public class Car
         model = "lester";
         capacity = 2000;
         value = 2131313.1;
+        gear = 0;
     }
     
     public void setCapacity(long _capacity) {
@@ -45,6 +46,10 @@ public class Car
     
     public double getValue() {
         return value;
+    }
+    
+    public int getGear() {
+        return gear;
     }
     
     public void changeGear(int _gear) {
