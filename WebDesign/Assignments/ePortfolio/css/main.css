@@ -1,12 +1,13 @@
-/*==== init ====*/
+/* ==== init ==== */
 * {
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -15,7 +16,7 @@ body {
   background-color: #222;
 }
 
-/*===================== general ====================*/
+/* ===================== general ==================== */
 
 .container {
   width: 1080px;
@@ -23,7 +24,7 @@ body {
   background-color: #fafafa;
 }
 
-/*==== header ====*/
+/* ==== header ==== */
 
 header {
   width: 100%;
@@ -42,7 +43,7 @@ header h2 {
   font-size: 24px;
 }
 
-/*==== navigation ====*/
+/* ==== navigation ==== */
 
 nav {
   font-size: 14px;
@@ -75,23 +76,24 @@ nav ul li.dual {
   padding-right: 0;
 }
 
-  /*===  nav spec ===*/
+/* ===  nav spec === */
 
-  nav ul li.active {
-    background-color: #006fc5;
-  }
+nav ul li.active {
+  background-color: #006fc5;
+}
 
-  nav ul li span.active {
-    text-decoration: underline;
-  }
+nav ul li span.active {
+  text-decoration: underline;
+}
 
-  nav ul li.single:hover, nav ul li span:hover{
-    background-color: #fff;
-    color: #009fff;
-  }
+nav ul li.single:hover,
+nav ul li span:hover {
+  background-color: #fff;
+  color: #009fff;
+}
 
 
-/*==== footer ====*/
+/* ==== footer ==== */
 
 footer {
   width: 1040px;
@@ -110,9 +112,9 @@ footer p {
   padding-top: 10px;
 }
 
-/*======================= Pages =====================*/
+/* ======================= Pages ===================== */
 
-/*========= intro =========*/
+/* ========= intro ========= */
 
 main {
   padding: 100px 120px 60px 120px;
@@ -127,7 +129,7 @@ main {
 .brief p {
   font-size: 18px;
   line-height: 24px;
-  font-family: verdana;
+  font-family: verdana, sans-serif;
 }
 
 .cv-title-line {
@@ -169,7 +171,8 @@ main {
   padding-bottom: 16px;
 }
 
-.cv li, .cv dt {
+.cv li,
+.cv dt {
   font-size: 15px;
 }
 
@@ -215,7 +218,7 @@ main {
   padding-left: 40px;
 }
 
-/*====== units a&b =======*/
+/* ====== units a&b ======= */
 
 .units {
   padding-bottom: 40px;
@@ -239,7 +242,7 @@ main {
 .un-title p {
   color: #009fff;
   font-size: 14px;
-  font-stretch:extra-condensed;
+  font-stretch: extra-condensed;
 }
 
 .un-title a {
@@ -266,7 +269,8 @@ main {
   margin-bottom: 40px;
 }
 
-.reflection p, .experience p {
+.reflection p,
+.experience p {
   font-size: 14px;
 }
 
@@ -275,7 +279,7 @@ main {
   color: #009fff;
 }
 
-/*===========  Evaluation ============*/
+/* ===========  Evaluation ============ */
 
 .def h4 {
   color: #009fff;
@@ -286,7 +290,7 @@ main {
 
 .bar {
   height: 18px;
-  background-color: #1276B2;
+  background-color: #1276b2;
   margin: 24px 0 18px 0;
 }
 

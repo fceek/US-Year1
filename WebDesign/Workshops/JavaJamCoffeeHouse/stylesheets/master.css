@@ -1,4 +1,4 @@
-/*===== init =====*/
+/* ===== init ===== */
 
 ul {
   list-style: none;
@@ -6,7 +6,7 @@ ul {
 }
 
 .pageWrapper {
-  margin: 30px ;
+  margin: 30px;
 }
 
 a {
@@ -18,7 +18,7 @@ a:visited {
   color: #000;
 }
 
-/*===== header =====*/
+/* ===== header ===== */
 
 header img {
   padding-left: 10px;
@@ -35,7 +35,7 @@ header h1 {
   font-size: 24px;
 }
 
-/*===== navigation bar =====*/
+/* ===== navigation bar ===== */
 
 nav ul li {
   float: left;
@@ -63,7 +63,8 @@ nav ul li a.current {
 .container {
   height: 650px;
 }
-/*==== footer =====*/
+
+/* ==== footer ===== */
 
 footer {
   margin: 0;
@@ -71,7 +72,6 @@ footer {
   font-size: 14px;
   height: 64px;
 }
-
 
 footer div.contact {
   padding-left: 12px;

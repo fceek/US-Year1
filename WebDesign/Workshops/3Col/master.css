@@ -1,4 +1,8 @@
-header, nav, main, footer, aside {
+header,
+nav,
+main,
+footer,
+aside {
   display: block;
 }
 
@@ -7,12 +11,12 @@ header, nav, main, footer, aside {
 }
 
 body {
-  margin:0;
+  margin: 0;
   background-color: #ffffff;
 }
 
 #container {
-  background-color: #eeeeee;
+  background-color: #eee;
   color: #006600;
   min-width: 960px;
   font-family: Verdana, Arial, sans-serif;
@@ -27,7 +31,7 @@ header {
   color: #cc66cc;
   text-align: right;
   padding: 0 20px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
 }
 
 nav {
@@ -48,7 +52,7 @@ main {
 }
 
 footer {
-  font-size: .70em;
+  font-size: 0.7em;
   text-align: center;
   color: #006600;
   background-color: #ffffff;
@@ -60,19 +64,21 @@ h1 {
   margin-top: 0;
   font-size: 3em;
   text-align: left;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 2px 2px 2px #000;
 }
 
 header a {
   font-size: 0.80em;
 }
 
-header a:link, header a:visited {
-  color: #ffffff;
+header a:link,
+header a:visited {
+  color: #fff;
 }
 
-header a:focus, header a:hover {
-  color: #eeeeee;
+header a:focus,
+header a:hover {
+  color: #eee;
 }
 
 nav ul {
@@ -86,19 +92,20 @@ nav a {
 }
 
 nav a:link {
-  color:#006600;
+  color:#060;
 }
 
 nav a:visited {
-  color: #003300;
+  color: #030;
 }
 
-nav a:focus, nav a:hover {
-  color: #cc66cc;
+nav a:focus,
+nav a:hover {
+  color: #c6c;
 }
 
 nav a:active {
-  color: #000000;
+  color: #000;
 }
 
 nav img {
@@ -109,9 +116,10 @@ main p {
   margin: 20px;
 }
 
-main h2, main h3 {
+main h2,
+main h3 {
   color: #cc66cc;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .floatright {
@@ -121,13 +129,13 @@ main h2, main h3 {
 
 aside h3 {
   padding-bottom: 2px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   margin: 10px;
-  font-size: 0.90em;
+  font-size: 0.9em;
   color: #cc66cc;
 }
 
 .news {
-  font-size: 0.80em;
+  font-size: 0.8em;
   margin: 10px;
 }
