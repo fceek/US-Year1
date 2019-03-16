@@ -54,8 +54,8 @@ main {
 footer {
   font-size: 0.7em;
   text-align: center;
-  color: #006600;
-  background-color: #ffffff;
+  color: #060;
+  background-color: #fff;
   padding-top: 10px;
   clear: both;
 }
@@ -68,7 +68,7 @@ h1 {
 }
 
 header a {
-  font-size: 0.80em;
+  font-size: 0.8em;
 }
 
 header a:link,
@@ -92,7 +92,7 @@ nav a {
 }
 
 nav a:link {
-  color:#060;
+  color: #060;
 }
 
 nav a:visited {
@@ -132,7 +132,7 @@ aside h3 {
   border-bottom: 1px solid #000;
   margin: 10px;
   font-size: 0.9em;
-  color: #cc66cc;
+  color: #c6c;
 }
 
 .news {
