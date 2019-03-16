@@ -47,8 +47,8 @@ aside {
 main {
   margin: 0 210px 0 160px;
   padding: 1px 10px 20px 10px;
-  background-color: #ffffff;
-  color: #006600;
+  background-color: #fff;
+  color: #060;
 }
 
 footer {
@@ -118,7 +118,7 @@ main p {
 
 main h2,
 main h3 {
-  color: #cc66cc;
+  color: #c6c;
   background-color: #fff;
 }
 
