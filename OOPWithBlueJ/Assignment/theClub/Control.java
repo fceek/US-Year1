@@ -1,14 +1,7 @@
-
-/**
- * Write a description of class Control here.
- * 
- * @author (yourname) 
- * @version (a version number or a date)
- */
 public class Control
 {
 
-    private ClubRecords cr = new ClubRecords();
+    private ClubRecords cr = new ClubRecords("testfile");
 
     public Control()
     {    
@@ -18,12 +11,14 @@ public class Control
         cr.enrolMember("Lester","L", 2017); 
         cr.enrolMember("Chen","Fan", 2017); 
         cr.enrolMember("Bruce","Wayne", 2019); 
+        cr.enrolMember("","", 2019); 
         cr.enrolMember("La","Luthur", 2018); 
+        cr.enrolMember("Cheddar","Fatman", 2017); 
 
         System.out.println(" ");
         System.out.println("********Print the list of 5 students*********");
         cr.printList();
-
+        
         System.out.println(" ");
         System.out.println("********Find Member by list index *******");
         cr.findMemberByIndex(1);
@@ -49,5 +44,9 @@ public class Control
         cr.removeMember("BruWa3");
         cr.printList();
        
+        System.out.println(" ");
+        System.out.println("********File Operation Test********************");
+        
+        cr.saveRecord();
     }        
 }

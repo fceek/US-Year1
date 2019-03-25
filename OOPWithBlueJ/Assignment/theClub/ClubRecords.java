@@ -1,39 +1,93 @@
 import java.util.ArrayList;
 import java.io.File;
-import java.time.Year;
-/**
- * The ClubRecords class holds the membership records and allows them to be analyzed
- * It uses an ArrayList to store the records. Each record is a Member objec.
- */
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+
 public class ClubRecords
 {
     private ArrayList<Member> members;
-    /**
-     * Create  a ClubRecord class 
-     */
-    public ClubRecords()
+    private boolean updated;
+    private File record;
+  
+    public ClubRecords(String fileName)
     {
         members = new ArrayList<Member>();
+        record = new File(fileName);
+        try {
+            readRecord();
+        } catch (IOException e) {
+            //do nothing
+        }
+        updated = false;
     }
 
-    /**
-     * Add a member to the ClubRecords. A new Member object is created from the first name, surnamee and 
-     * the year joined. Before adding the member to the list a unique ID is created.
-     */
-    public void enrolMember(String aFirstName, String aSurname, int aYear)
-    {
+    private void readRecord() throws IOException {
+        if (!record.createNewFile()) {
+            BufferedReader br = new BufferedReader(new FileReader(record));
+            String currentRec = null;
+            while ((currentRec = br.readLine()) != null) {
+                String _firstName, _surname, _year, _ID;
+                currentRec = currentRec.substring(7);
+                _firstName = currentRec.substring(0,currentRec.indexOf(" "));
+                
+                currentRec = currentRec.substring(currentRec.indexOf(" ")+1);
+                _surname = currentRec.substring(0,currentRec.indexOf(" "));
+                
+                currentRec = currentRec.substring(currentRec.indexOf(" ") + 17);
+                _year = currentRec.substring(0,currentRec.indexOf(" "));
+                
+                currentRec = currentRec.substring(currentRec.indexOf(" ") + 7);
+                _ID = currentRec;
+                
+                enrolMember(_firstName,_surname,Integer.parseInt(_year),_ID);
+            } 
+            
+            updated = true;
+        }
+    }
+    
+    public void saveRecord(){
+        try {
+            if (updated) {
+                File backUp = new File(record.getName() + ".bak");
+                record.renameTo(backUp);
+                record.delete();
+                record.createNewFile();
+                FileWriter fw = new FileWriter(record);
+                for (Member thisHuman : members) fw.write(thisHuman.toString() + "\n");
+                fw.flush();
+            }
+        }
+        catch (IOException e) {
+            System.out.println("IOE");
+        }
+    }
+    
+    private void enrolMember(String aFirstName, String aSurname, int aYear, String aID) {
         Member current = new Member(aFirstName,aSurname,aYear);
-        current.setID(createID(aFirstName,aSurname));
+        current.setID(aID);
         members.add(current);
         System.out.println(" Enrolled : " + current);
+        
+        updated = true;
+    }
+    
+    public void enrolMember(String aFirstName, String aSurname, int aYear)
+    {
+        if (aFirstName == "" || aSurname == "") System.out.println(" No Empty Names! ");
+        else
+        {
+            Member current = new Member(aFirstName,aSurname,aYear);
+            current.setID(createID(aFirstName,aSurname));
+            members.add(current);
+            System.out.println(" Enrolled : " + current);
+        
+            updated = true;
+        }
     }
 
-    /**
-     * Set the ID of this member. The ID joins the first three characters of the memeber's first name and the first two
-     * characters of the member's surname.If the first name is less than 3 characters
-     * or the surname is less than 2 characters the whole name is used. A number that equals
-     * the number of members in the Club is then added to make the name unique.
-     */
     private String createID(String firstName, String surname)
     {    
         String firstStr,surStr;
@@ -46,30 +100,17 @@ public class ClubRecords
         return firstStr + surStr + numberOfMembers();
     }    
 
-    /**
-     * Return the number of members currently enrolled in this Lab Class.
-     */
     private int numberOfMembers()
     {
         return members.size();
     }    
     
-    /**
-     * Print out a full list of members. Add the number of members in the list. 
-     */
     public void printList()
     {
         for (Member current : members) System.out.println(current);
         System.out.println(" Total Members: " + numberOfMembers());
     }
     
-    /**
-     * Use the ArrayList 'get' method to return the Member 
-     * and print the details. Validate the index entered.
-     * Print an error message
-     * @param int the index number in the list
-     * @return Member a member 
-     */
     public Member findMemberByIndex(int anIndex)
     {
         Member aMember = null;
@@ -82,12 +123,6 @@ public class ClubRecords
         return aMember;        
     }
 
-    /**
-     * Find a Member from the ID of the member. The ID's are unique so only one 
-     * meber should be returned.The details will be printed. A message will be printed if not found
-     * @param String a member ID
-     * @return Member a member
-     */
     public Member findMemberByID(String anID)
     {
         boolean found = false;
@@ -105,13 +140,6 @@ public class ClubRecords
         return null;
     }
 
-    
-    /**
-     * Remove a member from the list using the member ID to search.
-     * First find the member then use the remove by object method of the ArryList
-     * Print a message to confirm removal. You can use another method to find the member.
-     * @param String a member ID
-     */
     public void removeMember(String anID)
     {
         Member aMember = null; 
@@ -121,10 +149,7 @@ public class ClubRecords
             members.remove(aMember);
             System.out.println(" Removed!");
         }
+        
+        updated = true;
     }
-
-    
-    
-    
-    
 }
