@@ -1,0 +1,112 @@
+/* ======== init ======== */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #101010;
+  height: 100%;
+}
+
+div.container {
+  height: 100%;
+}
+
+/* ======== title ========*/
+
+div.banner {
+  color: #fff;
+  position: absolute;
+  background-color: #1a1a1a;
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.banner h1 {
+  font-weight: lighter;
+  font-family: garamond;
+  font-size: 42px;
+  padding-left: 40px;
+}
+
+/* ========= video player =========== */
+
+div.wrapper-video {
+  margin-left: 40px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  width: 66%;
+  border: 8px solid #000;
+  border-radius: 8px;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ======== progress bar =========== */
+
+div#prog-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #555;
+}
+
+#prog-bar div#prog {
+  width: 0;
+  height: 8px;
+  background-color: #bbb;
+}
+
+/* ======== video control ========== */
+
+div.wrapper-control {
+  height: 100%;
+  width: 100px;
+  background-color: #1a1a1a;
+}
+
+div.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  width: 160px;
+  height: 260px;
+  padding-left: 30px;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-color: #fff;
+  border: none;
+  border-radius: 48px;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button img {
+  padding-top: 3px;
+  height: 28px;
+  width: 28px;
+}
