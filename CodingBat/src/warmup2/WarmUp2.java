@@ -6,7 +6,7 @@ public class WarmUp2 {
         Code runner = new Code() ;
 
         System.out.println(
-                runner.stringBits("Heeololeo")
+                runner.arrayCount9(new int[]{1, 9, 9,3,9})
         );
     }
 
@@ -62,5 +62,39 @@ class Code {
         }
         return procStr;
     }
+
+    public String stringSplosion(String str) {
+        String procStr = "";
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = 0; j <= i; j++) {
+                procStr += str.charAt(j);
+            }
+        }
+
+        return procStr;
+    }
+
+    public int last2(String str) {
+        if (str.length() <= 2) return 0;
+        int lastCount = 0;
+        String lastStr = str.substring(str.length()-2,str.length());
+        for (int i = 0; i < str.length()-2; i++) {
+            if (lastStr.equals(str.substring(i,i+2))) lastCount++;
+        }
+        return lastCount;
+    }
+
+    public int arrayCount9(int[] nums) {
+        int nineCount = 0;
+        for (int index: nums) {
+            if (index == 9) nineCount++;
+        }
+        return nineCount;
+    }
+
+    public boolean arrayFront9(int[] nums) {
+
+    }
+
 
 }
