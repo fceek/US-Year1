@@ -6,7 +6,7 @@ public class WarmUp2 {
         Code runner = new Code() ;
 
         System.out.println(
-                runner.noTriples(new int[]{1,1,2,2,1})
+                runner.has271(new int[]{1,1,2,7,3})
         );
     }
 
@@ -173,7 +173,17 @@ class Code {
     }
 
     public boolean noTriples(int[] nums) {
-        for
-        return
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] == nums[i+1] && nums[i] == nums[i+2]) return false;
+        }
+        return true;
     }
+
+    public boolean has271(int[] nums) {
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] == (nums[i+1] - 5) && ((nums[i] <= (nums[i+2] +3)) && (nums[i] >= (nums[i+2] -1)))) return true;
+        }
+        return false;
+    }
+
 }
