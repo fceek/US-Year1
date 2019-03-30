@@ -6,7 +6,7 @@ public class Control
     public Control()
     {    
         System.out.println(" ");
-        System.out.println("********Enrol 5 students*********");
+        System.out.println("********Enrol students*********");
         cr.enrolMember("Wayne","Fu", 2016); 
         cr.enrolMember("Lester","L", 2017); 
         cr.enrolMember("Chen","Fan", 2017); 
@@ -14,9 +14,10 @@ public class Control
         cr.enrolMember("","", 2019); 
         cr.enrolMember("La","Luthur", 2018); 
         cr.enrolMember("Cheddar","Fatman", 2017); 
+        cr.enrolMember("Cheddar","Fatboiman", 2014); 
 
         System.out.println(" ");
-        System.out.println("********Print the list of 5 students*********");
+        System.out.println("********Print the list of students*********");
         cr.printList();
         
         System.out.println(" ");

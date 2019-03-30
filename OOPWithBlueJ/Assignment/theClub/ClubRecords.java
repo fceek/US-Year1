@@ -76,15 +76,18 @@ public class ClubRecords
     
     public void enrolMember(String aFirstName, String aSurname, int aYear)
     {
-        if (aFirstName == "" || aSurname == "") System.out.println(" No Empty Names! ");
-        else
-        {
-            Member current = new Member(aFirstName,aSurname,aYear);
-            current.setID(createID(aFirstName,aSurname));
-            members.add(current);
-            System.out.println(" Enrolled : " + current);
+        if (aYear < 2016 || aYear >= 2020) System.out.println(" Invalid Time Joined");
+        else {
+            if (aFirstName == "" || aSurname == "") System.out.println(" No Empty Names! ");
+            else
+            {
+                Member current = new Member(aFirstName,aSurname,aYear);
+                current.setID(createID(aFirstName,aSurname));
+                members.add(current);
+                System.out.println(" Enrolled : " + current);
         
-            updated = true;
+                updated = true;
+            }
         }
     }
 
