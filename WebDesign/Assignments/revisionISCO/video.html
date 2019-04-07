@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RevisionISCO</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hur3vje.css">
+    <script src="scripts/control.js" charset="utf-8"></script>
+    <script src="scripts/style.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="header-wrapper">
+
+        <div class="header-title">
+          <p>Revision</p><p class="header-title-alter">ISCO</p>
+        </div>
+
+        <div class="header-nav-wrapper">
+          <ul class="header-nav">
+            <li><a href="index.html">Note</a></li>
+            <li>|</li>
+            <li><a href="video.html">Video</a></li>
+            <li>|</li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="sidebar left">
+        <div class="left-nav-wrapper">
+          <div class="left-nav">
+            <ul class="video-switch">
+              <li onclick="switchVideo(this)" id="PositiveInt">Positive Int -</li>
+              <li onclick="switchVideo(this)" id="Converting">Convert -</li>
+              <li onclick="switchVideo(this)" id="SignNMag">Sign & Magnitude -</li>
+              <li onclick="switchVideo(this)" id="Complement">2's Complement -</li>
+              <li onclick="switchVideo(this)" id="Hex">Hexadecimal -</li>
+              <li onclick="switchVideo(this)" id="CharSets">Character Sets -</li>
+              <li onclick="switchVideo(this)" id="Bitmaps">Bitmaps -</li>
+              <li onclick="switchVideo(this)" id="Metadata">Metadata -</li>
+              <li onclick="switchVideo(this)" id="CalcSize">Calculate Size -</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+      <main class="video-content">
+        <h1 class="video-title">Video</h1>
+        <h2 class="video-subtitle">7a Data Representation</h2>
+
+        <div class="video-block">
+
+
+          <div class="video-wrapper">
+            <video id="theVideo" poster="resources/images/PositiveInt.jpg" src="resources/videos/PositiveInt.mp4">
+            </video>
+            <div id="prog-bar">
+              <div id="video-prog">
+              </div>
+            </div>
+          </div>
+
+          <div class="video-control-wrapper">
+            <div class="video-control">
+              <button type="button" id="timetag" title="Time"></button>
+              <button type="button" id="play-pause" title="Play / Pause"><img src="resources/icon/play-button.png"></button>
+              <button type="button" id="mute-unmute" title="Mute / Unmute"><img src="resources/icon/mute.png"></button>
+              <button type="button" id="rewind" title="Rewind"><img src="resources/icon/refresh-button.png"></button>
+              <button type="button" id="volumeb" title="Volume"><img src="resources/icon/volume.png"></button>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <div class="sidebar right">
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-upper">
+        <p>IFY WSDD Assignment 3 <span>|</span> ISCO Revison Page</p>
+      </div>
+      <div class="footer-lower">
+        <img src="resources/images/theLogo.png">
+        <p>Fceek96@gmail.com</p>
+        <br>
+      </div>
+
+    </footer>
+
+
+  </body>
+</html>

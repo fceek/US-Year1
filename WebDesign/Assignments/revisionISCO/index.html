@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RevisionISCO</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hur3vje.css">
+    <script src="scripts/style.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="header-wrapper">
+
+        <div class="header-title">
+          <p>Revision</p><p class="header-title-alter">ISCO</p>
+        </div>
+
+        <div class="header-nav-wrapper">
+          <ul class="header-nav">
+            <li><a href="index.html">Note</a></li>
+            <li>|</li>
+            <li><a href="video.html">Video</a></li>
+            <li>|</li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="sidebar left">
+        <div class="left-nav-wrapper">
+          <div class="left-nav">
+            <ul>
+              <li><a href="#anchor-intro">Intro -</a></li>
+              <li><a href="#anchor-number">Number -</a></li>
+              <li><a href="#anchor-text">Text -</a></li>
+              <li><a href="#anchor-image">Image -</a></li>
+              <li class="left-nav-last"><a href="#top">Back To Top -</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+      <main class="note-content">
+        <h1 class="note-title">Note</h1>
+        <h2 class="note-subtitle">7a Data Representation</h2>
+
+        <div class="note-block">
+
+          <div class="note-block-column" id="anchor-intro">
+            <p> - Intro -</p>
+          </div>
+
+          <div class="note-block-title">
+            <h3>How was data stored in memory/computers?</h3>
+          </div>
+          <div class="note-block-exp">
+            <p>Numbers were stored in binary or hex; characters and text were stored by using character sets; images were stored as bitmaps.</p>
+          </div>
+
+          <div class="note-block-column" id="anchor-number">
+            <p> - Numbers -</p>
+          </div>
+
+          <div class="note-block-title">
+            <h3>How positive integers are stored in computers in binary?</h3>
+          </div>
+          <div class="note-block-exp">
+            <p>Binary is to use 0 and 1 to represent everything which is easy to be interpreted by computers. After decimal numbers been converted to binary, they could be saved in memory every 8 bits.</p>
+          </div>
+          <div class="note-block-img">
+            <img src="resources/images/btod.png">
+          </div>
+          <div class="note-block-mixed">
+            <h3>Converting binary to decimal</h3>
+            <p>Simply add every non-0 digit's value(or say, weight) together to get the decimal.</p>
+            <p>For this example, 10110101 is 128+32+16+4+1 = 181</p>
+          </div>
+          <div class="note-block-mixed">
+            <h3>Converting decimal to binary</h3>
+            <p>Try to fit every digit's value to the decimal number from higher to lower, note the digit that fits as 1 and subtract the value from decimal number.</p>
+            <p>Follow this loop till the number becomes 0.</p>
+          </div>
+          <div class="note-block-exp">
+            <p>Take the same example, the process is: 181 - 128 = 53, so the 8th digit whose value is 128 is 1; 53 - 32 = 21, 6th digit is 1...</p>
+          </div>
+          <div class="note-block-title">
+            <h3>Sign and Magnitude / Two's Complement</h3>
+          </div>
+          <div class="note-block-mixed">
+            <h3>Sign and Magnitude</h3>
+            <p>Use the highest digit to represent sign. 0 is positive, 1 is negative. Remaining part is just the normal binary number.</p>
+          </div>
+          <div class="note-block-mixed">
+            <h3>Two's Complement</h3>
+            <p>The sign part is the same, 0 for + and 1 for -. However, when the sign is -, the number part should be all reversed and added 1.</p>
+          </div>
+          <div class="note-block-exp">
+            <p>For example, +117 is stored as 01110101 in both methods. But in sign and magnitude, -117 is 11110101; in two's complement, -117 is 10001011, which is the reversed version 10001010 + 1.</p>
+          </div>
+          <div class="note-block-title">
+            <h3>Represent Numbers in Hex</h3>
+          </div>
+          <div class="note-block-exp">
+            <p>One digit in Hex equals to 4 digits in binary. Example: 73B = 0111 0011 1011. So just make them binary and use converting between binary and decimal.</p>
+          </div>
+
+          <div class="note-block-column" id="anchor-text">
+            <p> - Text -</p>
+          </div>
+
+          <div class="note-block-title">
+            <h3>Character Sets: ASCII and Unicode</h3>
+          </div>
+          <div class="note-block-exp">
+            <p>Character sets define relationships between characters and binary numbers so that characters can be saved in memory. ASCII uses 8 dights to represent a character while Unicode uses 16, that makes Unicode files larger but can support more characters.</p>
+          </div>
+
+          <div class="note-block-column" id="anchor-image">
+            <p> - Image -</p>
+          </div>
+
+          <div class="note-block-mixed">
+            <h3>Bitmap</h3>
+            <p>First we declare the index of each color, like 0 for white and 1 for black. Then we store the image by store the color number of each pixel.</p>
+          </div>
+          <div class="note-block-mixed">
+            <h3>Color depth</h3>
+            <p>If there are blue and red color other than black and white, we need another digit to mark them. 1 digit can represent 2 colors, 2 can represent 4, 3 for 8... The number of digits is color depth.</p>
+          </div>
+          <div class="note-block-exp">
+            <p>An image also contains metadata, that records its name, arthor, type, date or other information.</p>
+          </div>
+          <div class="note-block-mixed">
+            <h3>Calculate size of a bitmap</h3>
+            <p>[width(in pixels) x height(in pixels) x color depth + size of metadata] / 8.</p>
+          </div>
+        </div>
+      </main>
+
+      <div class="sidebar right">
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-upper">
+        <p>IFY WSDD Assignment 3 <span>|</span> ISCO Revison Page</p>
+      </div>
+      <div class="footer-lower">
+        <img src="resources/images/theLogo.png">
+        <p>Fceek96@gmail.com</p>
+        <br>
+      </div>
+
+    </footer>
+
+
+  </body>
+</html>
